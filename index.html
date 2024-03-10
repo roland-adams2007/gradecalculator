@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+      <div class="container">
+        <h1 id="out_h1">Grade Calculator</h1>
+           <div class="inner_container">
+                 
+                <table  width="100%" cellspacing="10" style='text-align: center;'>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Score</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td><input type="number" name="englishscore" id="score1"  onchange=" calculateAverage()"></td>
+                        <td><input type="text" name="englishgrade" id="grade1.value"></td>
+                    </tr>
+                    <tr>
+                        <td>Maths</td>
+                        <td><input type="number" name="mathscore" id="score2" onchange="calculateAverage()"></td>
+                        <td><input type="text" name="mathgrade" id="grade2.value"></td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td><input type="number" name="chemscore" id="score3" onchange="calculateAverage()"></td>
+                        <td><input type="text" name="chemgrade" id="grade3.value"></td>
+                    </tr>
+                    <tr>
+                        <td>Biology</td>
+                        <td><input type="number" name="bioscore" id="score4" onchange="calculateAverage()"></td>
+                        <td><input type="text" name="biograde" id="grade4.value"></td>
+                    </tr>
+                    <tr>
+                        <td>French</td>
+                        <td><input type="number" name="frenchscore" id="score5" onchange=" calculateAverage()"></td>
+                        <td><input type="text" name="frenchgrade" id="grade5.value"></td>
+                    </tr>
+                    <tr>
+                        <td><button id="btn_grade" type="button" onclick="totalScore();averageScore()">Get Result</button></td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td><p id="total"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Average:</td>
+                        <td><p id="average"></p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Remark:</td>
+                        <td><p id="remark"></p></td>
+                        
+                    </tr>
+                </table>
+            </div>
+
+      </div>
+
+      <footer>
+        <p>Copyright&copy;2024.All right reserved.Made with love by Adams Roland</p>
+      </footer>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
